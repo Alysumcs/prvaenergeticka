@@ -306,7 +306,7 @@ html[data-theme="light"] .article-card .thumb{background:#e9ebe7;}
 .hero-bg-light{display:none;}
 html[data-theme="light"] .hero-bg-dark{display:none;}
 html[data-theme="light"] .hero-bg-light{display:block;}
-.energy-canvas{z-index:2;opacity:.75;}
+.energy-canvas{z-index:2;opacity:.9;}
 
 /* čitateľnosť textu nad fotkou */
 .hero h1 .ln-i,.hero-sub{text-shadow:0 2px 20px rgba(0,0,0,.5);}
@@ -318,6 +318,8 @@ html[data-theme="light"] .hero-bg-light{display:block;}
   background:rgba(10,12,16,.32);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px 14px;box-shadow:0 22px 55px -22px rgba(0,0,0,.65);}
 .hero-chart svg{width:100%!important;height:auto!important;display:block;}
+.hero-chart::before{content:"Vývoj cien energií";display:block;font-family:var(--mono);font-size:.6rem;
+  letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.62);margin:0 2px 8px;}
 @media(max-width:760px){.hero-chart{display:none;}}
 
 /* prekrytie: hore tmavý pruh pod menu, jemný prechod vľavo a dole do farby témy */
