@@ -230,11 +230,11 @@
         sway: 0.5 + Math.random() * 1.3, ph: Math.random() * 6.28, a: 0.3 + Math.random() * 0.5 };
     }
     function build() {
-      var N = Math.max(24, Math.min(60, Math.round(w * h / 24000)));
+      var N = Math.max(34, Math.min(95, Math.round(w * h / 15000)));
       nodes = [];
       for (var i = 0; i < N; i++) {
         nodes.push({ x: Math.random() * w, y: Math.random() * h,
-          vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3, r: 1 + Math.random() * 1.6 });
+          vx: (Math.random() - 0.5) * 0.32, vy: (Math.random() - 0.5) * 0.32, r: 1.4 + Math.random() * 2.2 });
       }
       var E = Math.max(16, Math.min(48, Math.round(w / 26)));
       embers = [];
@@ -262,7 +262,7 @@
       ctx.lineTo(x2, y2); ctx.stroke();
     }
 
-    var LINK = 140, MR = 200;
+    var LINK = 175, MR = 300;
     function frame() {
       t += 0.016;
       ctx.clearRect(0, 0, w, h);
@@ -272,7 +272,7 @@
         var p = nodes[i];
         if (mouse.active) {
           var dx = p.x - mouse.x, dy = p.y - mouse.y, d = Math.sqrt(dx * dx + dy * dy);
-          if (d < 130 && d > 0.01) { var f = (130 - d) / 130 * 1.5; p.x += dx / d * f; p.y += dy / d * f; }
+          if (d < 200 && d > 0.01) { var f = (200 - d) / 200 * 2.4; p.x += dx / d * f; p.y += dy / d * f; }
         }
         p.x += p.vx; p.y += p.vy;
         if (p.x < 0 || p.x > w) p.vx *= -1;
