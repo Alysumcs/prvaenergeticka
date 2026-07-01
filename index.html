@@ -49,7 +49,10 @@
 </header>
 <main id="content">
 <section class="hero">
+<img class="hero-bg hero-bg-dark" src="assets/img/hero-bg.png" alt="" aria-hidden="true" onerror="this.remove()">
+<img class="hero-bg hero-bg-light" src="assets/img/hero-bg-light.png" alt="" aria-hidden="true" onerror="this.remove()">
 <canvas class="energy-canvas" aria-hidden="true"></canvas>
+<div class="hero-chart" data-src="assets/grafy.json" aria-hidden="true"></div>
 <div class="scroll-hint" aria-hidden="true"><div class="mouse"></div><span>scrollujte</span></div>
 <div class="container hero-inner">
   <div class="kicker reveal"><span class="dot"></span> Energetické poradenstvo — Slovensko</div>
@@ -90,7 +93,7 @@
 </div></section>
 <section class="section-sm section-alt"><div class="container">
   <p class="section-head reveal" style="margin-bottom:30px;">Spolupracujeme s poprednými dodávateľmi energií, aby sme vám zabezpečili výhodné podmienky a spoľahlivý servis.</p>
-  <div class="partners reveal"><span class="card" style="padding:14px 22px;font-weight:700;letter-spacing:1px;">MAGNA</span><span class="card" style="padding:14px 22px;font-weight:700;letter-spacing:1px;">MET</span><span class="card" style="padding:14px 22px;font-weight:700;letter-spacing:1px;">Energetické služby</span><span class="card" style="padding:14px 22px;font-weight:700;letter-spacing:1px;">ELGAS</span><span class="card" style="padding:14px 22px;font-weight:700;letter-spacing:1px;">MVM Slovakia</span><span class="card" style="padding:14px 22px;font-weight:700;letter-spacing:1px;">GAS Energy</span></div>
+  <div class="partners reveal"><span class="partner-logo"><img src="assets/img/magna-logo.svg" alt="MAGNA" loading="lazy"></span><span class="partner-logo"><img src="assets/img/met-logo.svg" alt="MET" loading="lazy"></span><span class="partner-logo"><img src="assets/img/energeticke-sluzby-logo.svg" alt="Energetické služby" loading="lazy"></span><span class="partner-logo"><img src="assets/img/elgas1-logo.svg" alt="ELGAS" loading="lazy"></span><span class="partner-logo"><img src="assets/img/MVM-Slovakia-logo.svg" alt="MVM Slovakia" loading="lazy"></span><span class="partner-logo"><img src="assets/img/gas-energy.svg" alt="GAS Energy" loading="lazy"></span></div>
 </div></section>
 <section class="section" id="usetrite"><div class="container">
   <div class="section-head"><h2 class="reveal">Ušetrite na energiách</h2><p class="lead reveal">Pre lacnejšiu elektrinu alebo plyn nás kontaktujte – ponuky sú presné a individuálne.</p></div>
@@ -173,6 +176,7 @@ window.peCookies=(function(){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>document.addEventListener('submit',function(e){var f=e.target.closest('form.preview-form');if(f){e.preventDefault();alert('Náhľadová (statická) verzia – formulár sa odošle až na ostrej verzii na Hostingeri.');}});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

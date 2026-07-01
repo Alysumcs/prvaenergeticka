@@ -108,6 +108,14 @@
       var cv = hero.querySelector('.energy-canvas');
       if (cv) { initEnergyField(cv); }
 
+      var chartEl = hero.querySelector('.hero-chart');
+      if (chartEl && window.lottie) {
+        var opts = { container: chartEl, renderer: 'svg', loop: true, autoplay: true };
+        if (window.PE_GRAFY) { opts.animationData = window.PE_GRAFY; }
+        else if (chartEl.getAttribute('data-src')) { opts.path = chartEl.getAttribute('data-src'); }
+        window.lottie.loadAnimation(opts);
+      }
+
       var h1 = hero.querySelector('h1');
       var lines = [];
       if (h1 && !h1.dataset.split) {
