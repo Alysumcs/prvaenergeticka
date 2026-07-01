@@ -316,7 +316,7 @@ html[data-theme="light"] .hero-bg-light{display:block;}
 .hero-stats .num{filter:drop-shadow(0 2px 10px rgba(0,0,0,.4));}
 
 /* Lottie graf v hero (sklenený panel, čitateľný na oboch témach) */
-.hero-chart{position:absolute;right:4%;bottom:14vh;z-index:3;width:min(30vw,340px);
+.hero-chart{position:absolute;right:18%;bottom:9vh;z-index:3;width:min(30vw,340px);
   background:rgba(10,12,16,.32);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px 14px;box-shadow:0 22px 55px -22px rgba(0,0,0,.65);}
 .hero-chart svg{width:100%!important;height:auto!important;display:block;}
